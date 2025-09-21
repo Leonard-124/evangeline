@@ -158,7 +158,7 @@ import Product from "./Shop/Productcard/Product";
 import ProductCard from "./Shop/Productcard/ProductCard";
 import Coming_soon from "./Components/Coming_soon";
 import Checkout from "./Shop/Cart/Checkout/Checkout";
-import GigCard from "./Shop/Art/gigcard";
+import GigCard from "./Shop/Art/gigCard";
 import Checkoutnow from "./Shop/Art/checkoutnow";
 import Artpost from "./Components/Explore/Artacc/Artpost";
 import Trade from "./Components/Explore/Tradeacc/Trade";
