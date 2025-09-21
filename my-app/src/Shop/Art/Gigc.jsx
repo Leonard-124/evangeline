@@ -23,7 +23,7 @@ const packageDetails = {
   }
 }
 
-const GigCard = () => {
+const Gigc = () => {
   const [plan, setPlan] = useState('basic')
   const { id } = useParams()
   const [gig, setGig] = useState(null)
@@ -119,4 +119,4 @@ const GigCard = () => {
   )
 }
 
-export default GigCard;
+export default Gigc;
