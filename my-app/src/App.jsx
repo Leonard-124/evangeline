@@ -33,7 +33,6 @@ import Photography from "./Divolved/Photography";
 import Editorial from "./Divolved/Editorial";
 import Artworks from "./Divolved/Artworks";
 import Categories from "./Shop/Categories/Categories";
-import Art from "./Shop/Art/Art";
 import Cart from "./Shop/Cart/Cart";
 import Product from "./Shop/Productcard/Product";
 import ProductCard from "./Shop/Productcard/ProductCard";
@@ -109,7 +108,6 @@ const App = () => {
       <Route path="/callback" element={<CallbackPage />} />
 
       {/* Protected routes */}
-      <Route path="/Art" element={<ProtectedRoute><Art /></ProtectedRoute>} />
       <Route path="/Checkout" element={<ProtectedRoute><Checkout /></ProtectedRoute>} />
       <Route path="/profile" element={<ProtectedRoute><UserProfile /></ProtectedRoute>} />
       <Route path="/buy" element={<ProtectedRoute><Buy /></ProtectedRoute>} />
