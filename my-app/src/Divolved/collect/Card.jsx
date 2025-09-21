@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import Navbar from '../../Pages/Navbar'
 import { Link } from 'react-router-dom'
 
-const Inventioncard = () => {
+const Card = () => {
     const { id } = useParams()
     const inventionItem = invention.find(i=> i.id === Number((id)))
     if(!inventionItem) {
@@ -41,4 +41,4 @@ const Inventioncard = () => {
   )
 }
 
-export default Inventioncard
+export default Card

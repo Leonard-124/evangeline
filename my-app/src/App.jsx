@@ -144,7 +144,7 @@ import Buy from "./Divolved/Buy";
 import Collect from "./Divolved/collect/Collect";
 import Artcard from "./Divolved/collect/Artcard";
 import Inventions from "./Divolved/Inventions";
-import Inventioncard from "./Divolved/collect/inventioncard";
+import Card from "./Divolved/collect/Card";
 import Artistinventor from "./Divolved/Artistinventor";
 import Artinvent from "./Divolved/Artinvent";
 import Whatsnew from "./Divolved/Whatsnew";
@@ -217,7 +217,7 @@ const App = () => {
       <Route path="/card3" element={<Card3 />} />
       <Route path="/card4" element={<Card4 />} />
       <Route path="/inventions" element={<Inventions />} />
-      <Route path="/inventioncard/:id" element={<Inventioncard />} />
+      <Route path="/inventioncard/:id" element={<Card />} />
       <Route path="/artistinventor" element={<Artistinventor />} />
       <Route path="/whats-new" element={<Whatsnew />} />
       <Route path="/photography" element={<Photography />} />
