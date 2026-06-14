@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect } from "react";
 import AdminPanel from "./Components/Security/AdminPanel";
 import axios from "axios";
-import Home from "./Components/Home";
+// import Home from "./Components/Home"; production.
 import Davinci from "./Components/Davinci";
 import Explore from "./Components/Explore/Explore";
 import Shop from "./Components/Shop";
@@ -54,7 +54,16 @@ import CreatorProfile from "./Components/CreatorProfile";
 import Messages from "./Components/Messages";
 import Collectionlist from "./Divolved/collect/Collectionlist";
 import PaystackRedirect2 from "./Divolved/collect/Paystackredirect2";
+import Paystackdammyredirect from "./Divolved/collect/Paystackdammyredirect"; //this is a test version.
 import Wishlist from "./Divolved/collect/Wishlist";
+
+
+//Test imports
+import Home from "../Tests/Components/Home"
+import Blog1 from "../Tests/Pages/Blogs/Blog1"
+import Blog2 from "../Tests/Pages/Blogs/Blog2"
+
+
 const App = () => {
   const { isAuthenticated, user, getAccessTokenSilently } = useAuth0();
 
@@ -120,6 +129,10 @@ const App = () => {
       {/* Auth0 callback route */}
       <Route path="/callback" element={<CallbackPage />} />
       <Route path="/admin" element={<AdminPanel />} />
+
+       // Test routes
+      <Route path="/blog1" element={<Blog1 />} />
+      <Route path="/blog2" element={<Blog2 />} />
 
       {/* Protected routes */}
       <Route
@@ -193,6 +206,14 @@ const App = () => {
           <ProtectedRoute>
             <PaystackRedirect2 />
           </ProtectedRoute>
+        }
+      />
+    <Route //Not used in production.
+    path="/paystack_dammy_redirect"
+    element={
+      <ProtectedRoute>
+        <Paystackdammyredirect />
+      </ProtectedRoute>
         }
       />
       <Route

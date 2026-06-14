@@ -7,7 +7,7 @@ import Form from "./Form"; //ADDED THIS
 const Paystackredirect2 = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); //why?
   const [verifying, setVerifying] = useState(false);
   const [total, setTotal] = useState(null);
   const [itemPrice, setItemPrice] = useState(null);
@@ -147,7 +147,7 @@ const Paystackredirect2 = () => {
     } finally {
       setTimeout(() => { //introduced this bag</>
         setVerifying(false)
-      },2000)
+      },1000)
       // setVerifying(false);
     }
   };

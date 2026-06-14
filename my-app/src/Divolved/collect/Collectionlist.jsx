@@ -362,7 +362,7 @@ const Collectionlist = () => {
 
                 {/* FIX: checkout no longer depends on a stale/undefined `id` from useParams */}
                 <Link
-                  to={`/paystack-redirect2?total=${grandTotal}&items=${encodeURIComponent(JSON.stringify(cart.map(i => ({ artId: i._id || i.id, quantity: i.quantity }))))}`}
+                  to={`/paystack_dammy_redirect?total=${grandTotal}&items=${encodeURIComponent(JSON.stringify(cart.map(i => ({ artId: i._id || i.id, quantity: i.quantity }))))}`}
                   className="mt-4 w-full text-center bg-neutral-900 text-white text-[10px] tracking-[0.18em] uppercase py-4 hover:bg-neutral-700 active:scale-[0.98] transition-all duration-150"
                 >
                   Proceed to Checkout
