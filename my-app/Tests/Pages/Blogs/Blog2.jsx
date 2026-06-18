@@ -3,7 +3,7 @@ import React from 'react'
 import Header from '../../Components/Header'
 import Footer from "../../Components/Footer"
 import { items } from '../itemdata'
-import
+
 const Blog2 = () => {
   return (
     <>
@@ -253,6 +253,9 @@ const Blog2 = () => {
                   The Standard Entertainment. (2018, August). Perfect storm sinking Kenya's visual
                   arts. The Standard. 
                 </p>
+                <p>
+                  <a href="blog3">Next</a>
+                </p>
               </div>
             </div>
             <div className='w-[770px]'>
@@ -262,7 +265,6 @@ const Blog2 = () => {
             </div>
           </div>
           <div>
-
           </div>
         </div>
       </div>

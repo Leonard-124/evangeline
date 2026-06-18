@@ -62,6 +62,9 @@ import Wishlist from "./Divolved/collect/Wishlist";
 import Home from "../Tests/Components/Home"
 import Blog1 from "../Tests/Pages/Blogs/Blog1"
 import Blog2 from "../Tests/Pages/Blogs/Blog2"
+import Blog3 from "../Tests/Pages/Blogs/Blog3"
+import Blog4 from "../Tests/Pages/Blogs/Blog4"
+import Blog5 from "../Tests/Pages/Blogs/Blog5"
 
 
 const App = () => {
@@ -133,6 +136,9 @@ const App = () => {
        // Test routes
       <Route path="/blog1" element={<Blog1 />} />
       <Route path="/blog2" element={<Blog2 />} />
+      <Route path="/blog3" element={<Blog3 />} />
+      <Route path="/blog4" element={<Blog4 />} />
+      <Route path="/blog5" element={<Blog5 />} />
 
       {/* Protected routes */}
       <Route

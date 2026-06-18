@@ -25,5 +25,12 @@ export const items = [
         author: 'Alvine Omondi',
         image1: nicigoten,
         image2: roman
+    },
+    {
+        title: 'The Language of Kitenge: Why This Fabric is a Political Billboard',
+        author: 'Alvine Omondi',
+        image1: hague,
+        image2: fotios
     }
+
 ]
