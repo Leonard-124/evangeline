@@ -1,45 +1,56 @@
-
-import React from 'react'
-import { Link } from  "react-router-dom"
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 
 const Header = () => {
-    const [open, setOpen] = useState(false)
-
-    const handleOpen = () => {
-        setOpen(true)
-    }
+  const [open, setOpen] = useState(false)
 
   return (
-    <>  {open ? (
-        <div className='flex flex-col gap-10 sm:w-52  bg-[#e3e4e2f3] sm:h-full fixed top-0  bottom-0 p-20 '>
-                <button onClick={() => setOpen(false)} className=''>X</button>
-                
-                <Link to="/blogs" className='hover:border'>Blogs</Link>
-                <Link to="/cart" >Cart</Link>
-                <Link to="SignIn">SignIn</Link>
-                <Link to="/news">News</Link>
-                
+    <>
+      {/* Desktop navigation */}
+      <div className="hidden md:flex justify-between gap-4 lg:gap-6 text-lg lg:text-2xl font-serif text-[#222020] bg-[#eeeeec] pt-4 pb-4">
+        <div>
+          <h1>UnixArt</h1>
         </div>
-    ) : (
-                <div className='fixed right-0 left-0 z-50 top-0 h-20 shadow-md bg-[#eee8e5] '>
-        <div className='flex justify-between items-center ml-2.5 mr-2.5 font-sans text-[#5a5858] p-1.5 gap-3 pt-2'>
-            <div className='text-4xl'>
-                <h1>UnixArt</h1>
-            </div>
-            <div className='font-serif flex text-xl justify-between gap-1.5 '>
-                <Link to="/blogs">Blogs</Link>
-                <Link to="/cart" >Cart</Link>
-                <Link to="SignIn">SignIn</Link>
-                <Link to="/news">News</Link>
-                <button onClick={handleOpen}>X</button>
-            </div>
+        <div className="flex gap-3 mr-28">
+          <Link to="/blogs" className="hover:underline">Blogs</Link>
+          <Link to="/cart" className="hover:underline">Cart</Link>
+          <Link to="/SignIn" className="hover:underline">SignIn</Link>
+          <Link to="/news" className="hover:underline">News</Link>
         </div>
-    </div>
-    )}
-    <button onClick={handleOpen} hidden={open}>X</button>
+      </div>
+
+      {/* Mobile toggle button */}
+      <button
+        className="md:hidden text-2xl font-bold"
+        onClick={() => setOpen(!open)}
+      >
+        ☰
+      </button>
+
+      {/* Mobile menu with overlay */}
+      {open && (
+        <>
+          {/* Background overlay */}
+          <div
+            className="fixed inset-0 bg-black/40 z-40"
+            onClick={() => setOpen(false)}
+          ></div>
+
+          {/* Sidebar menu */}
+          <div className="flex flex-col gap-10 sm:w-52 bg-[#adadad] sm:h-full fixed top-0 bottom-0 p-20 z-50">
+            <div className="flex flex-col gap-4">
+              <Link to="/blogs" className="hover:underline" onClick={() => setOpen(false)}>Blogs</Link>
+              <Link to="/cart" className="hover:underline" onClick={() => setOpen(false)}>Cart</Link>
+              <Link to="/SignIn" className="hover:underline" onClick={() => setOpen(false)}>SignIn</Link>
+              <Link to="/news" className="hover:underline" onClick={() => setOpen(false)}>News</Link>
+            </div>
+          </div>
+        </>
+      )}
     </>
   )
 }
 
-export default Header;
+export default Header
+
+

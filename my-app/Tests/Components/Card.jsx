@@ -1,26 +1,26 @@
 import React from 'react'
 import { items } from '../Pages/itemdata'
 
-const Card = () => {
+const Card = () => { //hidden sm:block w-[400px] lg:w-[450px] 
   return (
     <div className=' bg-[#ebebeb] w-full mt-24 sm:w-auto'>
-        <div className='flex justify-center gap-3 '>
-            <div className='w-[400px] '>
+        <div className='lg:flex justify-center gap-3 '>
+            <div className='hidden sm:block w-[400px]'>  
                 <h1>More Art</h1>
             </div>
-            <div className='bg-[#fdfdfd] w-full'>
-                <div className='text-xl flex justify-between p-1'>
+            <div className='bg-[#fdfdfd] w-full sm:w-full'>
+                <div className='flex flex-col md:flex-row text-xl p-1'>
                     <div>
-                    <h1 className='lg:text-4xl md:text-3xl sm:text-xl font-serif'>
+                    <h1 className='sm:text-xl md:text-3xl lg:text-4xl font-serif'>
                         The Curse of the "Airport Painting": Why Mass-Produced Souvenirs Hurt Kenyan Artists
                     </h1>
-                    <h2>By: Alvin Omondi</h2>
+                    <h2 className='sm:text-xl md:text-3xl'>By: Alvin Omondi</h2>
                     </div>
-                    <div className='h-[300px] w-full'>
+                    <div className='h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-full'>
                         <img src={items[0].image2} alt="" className='object-cover w-full h-full' />
                     </div>
                 </div>
-                <div className='flex flex-col text-start p-1 text-[16px] font-sans gap-1 '>
+                <div className='flex flex-col text-start p-1 text-sm sm:text-sm  md:text-[16px] font-serif sm:font-sans gap-1.5 p-1 '>
                     <p>
                         You’ve seen them. Maybe in a duty-free shop after a layover in Nairobi.
                         Maybe on a beachside stall in Mombasa. Or maybe on a mass-market home décor
@@ -292,7 +292,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[500px] flex items-center m-1'>
+            <div className='hidden sm:block w-[450px]'>
                 <div className='w-full h-40 bg-[#3f3f3f55]'>
 
                 </div>
