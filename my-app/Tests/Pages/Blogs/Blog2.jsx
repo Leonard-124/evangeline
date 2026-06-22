@@ -10,11 +10,11 @@ const Blog2 = () => {
       <Header />
       <div className='min-h-screen w-full bg-[#e6e6e6] mt-20 mb-[200px]'>
         <div className='flex flex-col'>
-          <div className='flex justify-between w-full gap-3.5 p-1.5 h-[400px]'>
-            <div>
-            <h1 className='text-4xl font-serif'>{items[2]?.title || "img"}</h1>
-            <p className='text-2xl font-300'>What does it mean to be a Kenyan artist in a city that never stops moving?</p>
-            <p className='text-xl font-300'>
+          <div className='flex flex-col md:flex-row justify-between w-full gap-3.5 p-2 h-[250px] sm:h-[300px] md:h-[400px]'>
+            <div className='flex flex-col gap-2'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl font-serif'>{items[2]?.title || "img"}</h1>
+            <p className='text-base sm:text-lg md:text-xl font-light'>What does it mean to be a Kenyan artist in a city that never stops moving?</p>
+            <p className='text-sm sm:text-base md:text-lg font-light'>
               Nairobi is a metropolis of contradictions. Glass towers rise next to corrugated iron <br /> shanties.
               Billion-dollar tech startups operate across the road from open-air jua kali <br /> workshops where men
               weld scrap metal into sculpture. And in the middle of this chaos, a generation of painters,
@@ -22,16 +22,16 @@ const Blog2 = () => {
               when my ancestors speak one language, my customers speak another, and my canvas speaks acrylic?
             </p>
             </div>
-            <img src={items[2]?.image2} alt="" className='w-full h-full object-cover mr-20 rounded-r-md border-r-amber-200'/>
+            <img src={items[2]?.image2} alt="" className='w-full md:w-1/2 h-full object-cover  rounded-r-md border-r-amber-200'/>
           </div>
-          <div className='flex justify-center'>
-            <div className='w-[770px]'>
-              <div className='bg-[#6b6b6b] h-[250px] m-1 w-full'>
+          <div className='flex flex-col md:flex-row justify-center'>
+            <div className='hidden md:block md:w-[350px] lg:w-[400px]'>
+              <div className='bg-[#6b6b6b] h-40 sm:h-48 md:h-[250px] m-2 w-full'>
 
               </div>
             </div>
-            <div className='w-full bg-[#fcfcfcfb]'>
-              <div className='flex flex-col items-start m-1 font-sans'>
+            <div className='w-full bg-[#fcfcfcfb] p-3 sm:p-4 md:p-6'>
+              <div className='flex flex-col items-start gap-3 font-sans text-sm sm:text-base md:text-lg lg:text-xl'>
                 <p>
                   This is the identity crisis of urban Kenyan art. It is not abstract.
                   It is not academic. It is lived every day in studios across the Eastlands,
@@ -41,7 +41,7 @@ const Blog2 = () => {
                   language of contemporary painting to wrestle with ethnicity, tradition, and
                   the weight of a colonial past that never really ended.
                 </p>
-                <h1 className='font-semibold text-xl m-1.5'>The Weight of the Label: "Jua Kali" as Identity and Insult</h1>
+                <h1 className='font-semibold text-lg sm:text-xl md:text-2xl m-2'>The Weight of the Label: "Jua Kali" as Identity and Insult</h1>
                 <p>
                   To understand the identity crisis, you have to understand the word jua kali.
                   Literally "hot sun" in Swahili, it refers to Kenya's informal sector: the welders,
@@ -258,8 +258,8 @@ const Blog2 = () => {
                 </p>
               </div>
             </div>
-            <div className='w-[770px]'>
-              <div className='bg-[#6b6b6b] h-[250px] m-1 w-full'>
+            <div className='hidden md:block md:w-[350px] lg:w-[400px]'>
+              <div className='bg-[#6b6b6b] h-40 sm:h-48 md:h-[250px] m-2 w-full'>
 
               </div>
             </div>
