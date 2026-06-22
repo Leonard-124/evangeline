@@ -8,7 +8,7 @@ const Blog2 = () => {
   return (
     <>
       <Header />
-      <div className='min-h-screen w-full bg-[#e6e6e6] mt-20 mb-[200px]'>
+      <div className='min-h-screen w-full bg-[#f3f3f0] mt-20 mb-[200px]'>
         <div className='flex flex-col'>
           <div className='flex flex-col md:flex-row justify-between w-full gap-3.5 p-2 h-[250px] sm:h-[300px] md:h-[400px]'>
             <div className='flex flex-col gap-2'>
