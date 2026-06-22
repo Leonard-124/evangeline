@@ -427,7 +427,7 @@ const Navbar = () => {
             <div className="flex items-center gap-6 flex-1 max-w-2xl">
               {/* Logo */}
               <Link
-                to="/"
+                to="/artview"
                 className="flex-shrink-0 transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded"
               >
                 <img

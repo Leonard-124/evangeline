@@ -254,7 +254,7 @@ const Blog2 = () => {
                   arts. The Standard. 
                 </p>
                 <p>
-                  <a href="blog3">Next</a>
+                  <a href="the_language_of_kitenge">Next</a>
                 </p>
               </div>
             </div>

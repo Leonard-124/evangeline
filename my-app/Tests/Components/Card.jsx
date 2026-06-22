@@ -288,7 +288,7 @@ const Card = () => { //hidden sm:block w-[400px] lg:w-[450px]
                          <a href="https://standardmedia.co.ke/entertainment/news/article/2001422079/perfect-storm-sinking-kenyas-visual-arts" className='text-blue-600 underline'>https://standardmedia.co.ke/entertainment/news/article/2001422079/perfect-storm-sinking-kenyas-visual-arts</a> 
                     </p>
                     <div>
-                        <a href="/blog1" className='text-gray-500-600 underline'>Next</a>
+                        <a href="/beyond_the_bead" className='text-gray-500-600 underline'>Next</a>
                     </div>
                 </div>
             </div>

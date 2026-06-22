@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect } from "react";
 import AdminPanel from "./Components/Security/AdminPanel";
 import axios from "axios";
-// import Home from "./Components/Home"; production.
+import Homes from "./Components/Home";//prod
 import Davinci from "./Components/Davinci";
 import Explore from "./Components/Explore/Explore";
 import Shop from "./Components/Shop";
@@ -134,11 +134,12 @@ const App = () => {
       <Route path="/admin" element={<AdminPanel />} />
 
        // Test routes
-      <Route path="/blog1" element={<Blog1 />} />
-      <Route path="/blog2" element={<Blog2 />} />
-      <Route path="/blog3" element={<Blog3 />} />
+      <Route path="/beyond_the_bead" element={<Blog1 />} />
+      <Route path="/the_identity_crisis_of_urban_kenyan_artists" element={<Blog2 />} />
+      <Route path="/the_language_of_kitenge" element={<Blog3 />} />
       <Route path="/blog4" element={<Blog4 />} />
       <Route path="/blog5" element={<Blog5 />} />
+      <Route path="/artview" element={<Homes />} />
 
       {/* Protected routes */}
       <Route

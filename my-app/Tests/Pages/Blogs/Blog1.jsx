@@ -279,7 +279,7 @@ const Blog1 = () => {
           <p>
             Vryenhoek, L. (n.d.). Maasai women bead better products, better lives. WIEGO. 
           </p>
-          <a href="/blog2">Next/</a>
+          <a href="/the_identity_crisis_of_urban_kenyan_artists">Next/</a>
         </div>
         <div className='w-full md:w-[400px] lg:w-[500px] flex flex-col items-start gap-3 mt-8 md:mt-16'>
           <div className="w-full h-28 sm:h-32 md:h-40 bg-[#444443ea]">
