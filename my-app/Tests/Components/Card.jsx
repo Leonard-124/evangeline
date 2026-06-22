@@ -20,7 +20,7 @@ const Card = () => { //hidden sm:block w-[400px] lg:w-[450px]
                         <img src={items[0].image2} alt="" className='object-cover w-full h-full' />
                     </div>
                 </div>
-                <div className='flex flex-col text-start p-1 text-sm sm:text-sm  md:text-[16px] font-serif sm:font-sans gap-1.5 p-1 '>
+                <div className='flex flex-col text-start p-2 text-sm sm:text-base md:text-lg lg:text-xl font-serif gap-2'>
                     <p>
                         You’ve seen them. Maybe in a duty-free shop after a layover in Nairobi.
                         Maybe on a beachside stall in Mombasa. Or maybe on a mass-market home décor
@@ -303,3 +303,4 @@ const Card = () => { //hidden sm:block w-[400px] lg:w-[450px]
 }
 
 export default Card
+
