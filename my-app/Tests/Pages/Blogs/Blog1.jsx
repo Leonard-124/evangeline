@@ -9,20 +9,20 @@ const Blog1 = () => {
     <>
     <Header />
     <div className='min-h-screen mt-14'>
-      <div className='w-full h-[400px] relative'>
+      <div className='w-full h-[250px] sm:h-[300px] md:h-[400px] relative'>
         <img src={items[1]?.image1 || "Default Image"} alt="" className='w-full h-full object-cover' />
-        <h1 className='absolute left-0 right-20 top-60 ml-5 text-4xl font-bold tracking-[-1.5px] text-[#f1f1f1f1]'>{items[1]?.title || ""}</h1>
+        <h1 className='absolute left-0 right-10 top-32 sm:top-40 md:top-60 ml-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-1.5px] text-[#f1f1f1f1]'>{items[1]?.title || ""}</h1>
       </div>
-      <div className="flex justify-center bg-[#ebebeb] h-full">
-        <div className='w-[500px] flex flex-col items-center gap-3 mt-[1000px]'>
-          <div className="w-full h-40 bg-[#444443ea]">
+      <div className="flex flex-col md:flex-row justify-center bg-[#ebebeb] h-full">
+        <div className='w-full md:w-[400px] lg:w-[500px] flex flex-col items-center gap-3 mt-8 md:mt-16'>
+          <div className="w-full h-28 sm:h-32 md:h-40 bg-[#444443ea]">
 
           </div>
-          <div className="w-full h-40 bg-[#414140da]">
+          <div className="w-full h-28 sm:h-32 md:h-40 bg-[#414140da]">
 
           </div>
         </div>
-        <div className='w-full p-1 flex flex-col gap-1.5 text-start text-[16.5px] tracking-[-0.5px] font-serif bg-[#f1f1ef]'>
+        <div className='w-full p-2 sm:p-4 md:p-6  flex flex-col gap-2 text-start text-sm sm:text-base md:text-lg lg:text-xl tracking-[-0.5px] font-serif bg-[#f1f1ef]'>
           <p>The Maasai bead is not a decoration. It never has been.</p>
           <p>
             For centuries, the colorful geometric patterns worn by Maasai women
@@ -103,9 +103,9 @@ const Blog1 = () => {
             </p>
             <img src={items[1]?.image2 || "Image"} alt="" className='w-full h-full object-cover rounded-tl-4xl' />
           </div>
-          <h1 className='leading-0.5 font-semibold m-1'>The Numbers Don't Lie</h1>
+          <h1 className='leading-tight font-semibold m-1 mt-3 mb-3'>The Numbers Don't Lie</h1>
           <p>Let’s look at the scale of this transformation.</p>
-                                  <th className='w-full border '>
+                    <th className='w-full border mt-1'>
                         <tr className="flex justify-between border-b">
                             <td className=" border- w-full">Organization</td>
                             <td className=" border-l  w-full">Location</td>
@@ -162,7 +162,7 @@ const Blog1 = () => {
           <p>
             But the most telling detail is what the women buy with their beadwork income.
           </p>
-                      <th className='w-full border '>
+                      <th className='w-full border'>
                         <tr className="flex justify-between border-b">
                             <td className=" border- w-full">Priority Spending Area</td>
                             <td className=" border-l  w-full">Percentage of Women Reporting</td>
@@ -281,11 +281,11 @@ const Blog1 = () => {
           </p>
           <a href="/blog2">Next/</a>
         </div>
-        <div className='w-[500px] flex flex-col items-start gap-3 mt-3'>
-          <div className="w-full h-40 bg-[#444443ea]">
+        <div className='w-full md:w-[400px] lg:w-[500px] flex flex-col items-start gap-3 mt-8 md:mt-16'>
+          <div className="w-full h-28 sm:h-32 md:h-40 bg-[#444443ea]">
 
           </div>
-          <div className="w-full h-40 bg-[#414140da]">
+          <div className="w-full h-28 sm:h-32 md:h-40 bg-[#414140da]">
 
           </div>
         </div>
