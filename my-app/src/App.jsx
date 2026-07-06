@@ -62,7 +62,7 @@ import Wishlist from "./Divolved/collect/Wishlist";
 
 
 //Test imports
-// import Home from "../Tests/Components/Home"
+import Blogs from "../Tests/Components/Home"
 import Blog1 from "../Tests/Pages/Blogs/Blog1"
 import Blog2 from "../Tests/Pages/Blogs/Blog2"
 import Blog3 from "../Tests/Pages/Blogs/Blog3"
@@ -152,7 +152,7 @@ const App = () => {
       <Route path="/the_language_of_kitenge" element={<Blog3 />} />
       <Route path="/blog4" element={<Blog4 />} />
       <Route path="/blog5" element={<Blog5 />} />
-      {/* <Route path="/artview" element={<Homes />} /> */}
+      <Route path="/latest_art_blogs" element={<Blogs />} />
 
       {/* Protected routes */}
       <Route

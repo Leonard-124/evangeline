@@ -480,6 +480,10 @@ const Navbar = () => {
                       {linkUnderline("/collections")}
                       <span className="absolute top-0 right-[-1.5px] bg-red-500 text-white rounded-full h-[18px] w-[18px] flex items-center justify-center text-[12px] font-[500] tracking-[0.5px] p-0.5">{cartCount}</span>
                 </Link>
+                <Link to="/latest_art_blogs" className={linkClasses("/artworks")}>
+                  Blogs
+                  {linkUnderline("/artworks")}
+                </Link>
               </div>
 
               {/* Auth Section */}
