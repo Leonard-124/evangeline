@@ -6,68 +6,68 @@ import { lazy, Suspense } from "react";
 
 
 const Home = lazy(() => import("./Components/Home"))//prod
-import Davinci from "./Components/Davinci";
-import Explore from "./Components/Explore/Explore";
-import Shop from "./Components/Shop";
-import AdminPanel from "./Components/Security/AdminPanel";
+const Davinci = lazy(() => import("./Components/Davinci"));
+const Explore = lazy(() => import("./Components/Explore/Explore"));
+const Shop = lazy(() => import("./Components/Shop"));
+const AdminPanel = lazy(() => import("./Components/Security/AdminPanel"));
 //import SignUp from "./Components/Security/SignUp";
 //import Login from "./Components/Security/Login";
-import Logout from "./Components/Security/Logout";
-import UserProfile from "./Components/Security/UserProfile";
-import ProtectedRoute from "./Pages/ProtectedRoute";
-import CallbackPage from "./Pages/CallbackPage";
-import Post from "./Divolved/Post";
+const Logout = lazy(() => import("./Components/Security/Logout"));
+const UserProfile = lazy(() => import("./Components/Security/UserProfile"));
+const ProtectedRoute = lazy(() => import("./Pages/ProtectedRoute"));
+const CallbackPage = lazy(() => import("./Pages/CallbackPage"));
+const Post = lazy(() => import("./Divolved/Post"));
 import Crypto from "./Pages/Crypto";
-import Card1 from "./Divolved/Blogs/Card1";
-import Card2 from "./Divolved/Blogs/Card2";
-import Card3 from "./Divolved/Blogs/Card3";
-import Card4 from "./Divolved/Blogs/Card4";
-import Buy from "./Divolved/Buy";
-import Collect from "./Divolved/collect/Collect";
-import Artcard from "./Divolved/collect/Artcard";
-import Inventions from "./Divolved/Inventions";
-import Card from "./Divolved/collect/Card";
-import Cardo from "./Divolved/collect/Cardo";
-import Artistinventor from "./Divolved/Artistinventor";
+const Card1 = lazy(() => import("./Divolved/Blogs/Card1"));
+const Card2 = lazy(() => import("./Divolved/Blogs/Card2"));
+const Card3 = lazy(() => import("./Divolved/Blogs/Card3"));
+const Card4 = lazy(() => import("./Divolved/Blogs/Card4"));
+const Buy = lazy(() => import("./Divolved/Buy"));
+const Collect = lazy(() => import("./Divolved/collect/Collect"));
+const Artcard = lazy(() => import("./Divolved/collect/Artcard"));
+const Inventions = lazy(() => import("./Divolved/Inventions"));
+const Card = lazy(() => import("./Divolved/collect/Card"));
+const Cardo = lazy(() => import("./Divolved/collect/Cardo"));
+const Artistinventor = lazy(() => import("./Divolved/Artistinventor"));
 //import Artinvent from "./Divolved/Artinvent";
-import Whatsnew from "./Divolved/Whatsnew";
-import Photography from "./Divolved/Photography";
-import Editorial from "./Divolved/Editorial";
-import Artworks from "./Divolved/Artworks";
-import Artworkscard from "./Divolved/collect/Artworkscard";
-import Categories from "./Shop/Categories/Categories";
-import Cart from "./Shop/Cart/Cart";
-import Product from "./Shop/Productcard/Product";
-import ProductCard from "./Shop/Productcard/ProductCard";
-import Coming_soon from "./Components/Waste/Coming_soon";
-import Checkout from "./Shop/Cart/Checkout/Checkout";
-import Gigc from "./Shop/Art/Gigc";
-import View from "./Pages/View";
-import Search from "./Divolved/Search";
+const Whatsnew = lazy(() => import("./Divolved/Whatsnew"));
+const Photography = lazy(() => import("./Divolved/Photography"));
+const Editorial = lazy(() => import("./Divolved/Editorial"));
+const Artworks = lazy(() => import("./Divolved/Artworks"));
+const Artworkscard = lazy(() => import("./Divolved/collect/Artworkscard"));
+const Categories = lazy(() => import("./Shop/Categories/Categories"));
+const Cart = lazy(() => import("./Shop/Cart/Cart"));
+const Product = lazy(() => import("./Shop/Productcard/Product"));
+const ProductCard = lazy(() => import("./Shop/Productcard/ProductCard"));
+const Coming_soon = lazy(() => import("./Components/Waste/Coming_soon"));
+const Checkout = lazy(() => import("./Shop/Cart/Checkout/Checkout"));
+const Gigc = lazy(() => import("./Shop/Art/Gigc"));
 //import Checkoutnow from "./Shop/Art/checkoutnow";
-import Inventioncollect from "./Divolved/collect/Inventioncollect";
-import Artpost from "./Components/Explore/Artacc/Artpost";
-import Trade from "./Components/Waste/Tradeacc/Trade";
-import Paystackredirect from "./Divolved/collect/Paystackredirect";
-import Success from "./Shop/Cart/Success";
-import Paymentfail from "./Shop/Cart/ProductList/Paymentfail";
-import Order from "./Divolved/Orders/Order";
-import Posted from "./Divolved/Orders/Posted";
-import CreatorProfile from "./Components/CreatorProfile";
-import Messages from "./Components/Messages";
-import Collectionlist from "./Divolved/collect/Collectionlist";
-import PaystackRedirect2 from "./Divolved/collect/Paystackredirect2";
-import Paystackdammyredirect from "./Divolved/collect/Paystackdammyredirect"; //this is a test version.
-import Wishlist from "./Divolved/collect/Wishlist";
-
+const View = lazy(() => import("./Pages/View"));
+const Search = lazy(() => import("./Divolved/Search"));
+const Inventioncollect = lazy(() => import("./Divolved/collect/Inventioncollect"));
+const Artpost = lazy(() => import("./Components/Explore/Artacc/Artpost"));
+const Trade = lazy(() => import("./Components/Waste/Tradeacc/Trade"));
+const Paystackredirect = lazy(() => import("./Divolved/collect/Paystackredirect"));
+const Success = lazy(() => import("./Shop/Cart/Success"));
+const Paymentfail = lazy(() => import("./Shop/Cart/ProductList/Paymentfail"));
+const Order = lazy(() => import("./Divolved/Orders/Order"));
+const Posted = lazy(() => import("./Divolved/Orders/Posted"));
+const CreatorProfile = lazy(() => import("./Components/CreatorProfile"));
+const Messages = lazy(() => import("./Components/Messages"));
+const Collectionlist = lazy(() => import("./Divolved/collect/Collectionlist"));
+const PaystackRedirect2 = lazy(() => import("./Divolved/collect/Paystackredirect2"));
+const Paystackdammyredirect = lazy(() => import("./Divolved/collect/Paystackdammyredirect")); //test version
+const Wishlist = lazy(() => import("./Divolved/collect/Wishlist"));
 
 //Test imports
-import Blogs from "../Tests/Components/Home"
-import Blog1 from "../Tests/Pages/Blogs/Blog1"
-import Blog2 from "../Tests/Pages/Blogs/Blog2"
-import Blog3 from "../Tests/Pages/Blogs/Blog3"
-import Blog4 from "../Tests/Pages/Blogs/Blog4"
-import Blog5 from "../Tests/Pages/Blogs/Blog5"
+const Blogs = lazy(() => import("../Tests/Components/Home"));
+const Blog1 = lazy(() => import("../Tests/Pages/Blogs/Blog1"));
+const Blog2 = lazy(() => import("../Tests/Pages/Blogs/Blog2"));
+const Blog3 = lazy(() => import("../Tests/Pages/Blogs/Blog3"));
+const Blog4 = lazy(() => import("../Tests/Pages/Blogs/Blog4"));
+const Blog5 = lazy(() => import("../Tests/Pages/Blogs/Blog5"));
+
 
 function PageLoader() {
   return (
