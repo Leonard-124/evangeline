@@ -1,12 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect } from "react";
-import AdminPanel from "./Components/Security/AdminPanel";
 import axios from "axios";
-import Homes from "./Components/Home";//prod
+import { lazy, Suspense } from "react";
+
+
+const Home = lazy(() => import("./Components/Home"))//prod
 import Davinci from "./Components/Davinci";
 import Explore from "./Components/Explore/Explore";
 import Shop from "./Components/Shop";
+import AdminPanel from "./Components/Security/AdminPanel";
 //import SignUp from "./Components/Security/SignUp";
 //import Login from "./Components/Security/Login";
 import Logout from "./Components/Security/Logout";
@@ -59,12 +62,20 @@ import Wishlist from "./Divolved/collect/Wishlist";
 
 
 //Test imports
-import Home from "../Tests/Components/Home"
+// import Home from "../Tests/Components/Home"
 import Blog1 from "../Tests/Pages/Blogs/Blog1"
 import Blog2 from "../Tests/Pages/Blogs/Blog2"
 import Blog3 from "../Tests/Pages/Blogs/Blog3"
 import Blog4 from "../Tests/Pages/Blogs/Blog4"
 import Blog5 from "../Tests/Pages/Blogs/Blog5"
+
+function PageLoader() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#f3f3f3]">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-[#33352e0]" />
+    </div>
+  )
+}
 
 
 const App = () => {
@@ -91,7 +102,9 @@ const App = () => {
   }, [isAuthenticated, user, getAccessTokenSilently]);
 
   return (
-    <Routes>
+    <div>
+      <Suspense fallback={<PageLoader />}>
+          <Routes>
       {/* Public routes */}
       <Route index element={<Home />} />
       <Route path="/davinci" element={<Davinci />} />
@@ -139,7 +152,7 @@ const App = () => {
       <Route path="/the_language_of_kitenge" element={<Blog3 />} />
       <Route path="/blog4" element={<Blog4 />} />
       <Route path="/blog5" element={<Blog5 />} />
-      <Route path="/artview" element={<Homes />} />
+      {/* <Route path="/artview" element={<Homes />} /> */}
 
       {/* Protected routes */}
       <Route
@@ -288,6 +301,8 @@ const App = () => {
         }
       />
     </Routes>
+      </Suspense>
+    </div>
   );
 };
 
